@@ -21,12 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //buttons
         btnAdd = findViewById(R.id.btnAdd);
         btnSubtract = findViewById(R.id.btnSubtract);
         btnDivide = findViewById(R.id.btnDivide);
         btnMultiply = findViewById(R.id.btnMultiply);
         btnPercent = findViewById(R.id.btnPercent);
 
+        //text view
         txtOutput = findViewById(R.id.txtOutput);
 
         btnAdd.setOnClickListener(this);
