@@ -8,90 +8,90 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/var1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First Variable"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/txtboxVar1"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtboxVar1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.132" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnPercent"
         android:layout_width="48dp"
         android:layout_height="49dp"
         android:backgroundTint="#E91E63"
         android:text="%"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btnDivide"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="48dp"
-        android:layout_height="49dp"
-        android:backgroundTint="#E91E63"
-        android:text="-"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAdd"
         android:layout_width="48dp"
         android:layout_height="49dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="#E91E63"
         android:foregroundTint="#8CD7FA"
         android:text="+"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtboxVar2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnSubtract"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#E91E63"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnDivide"
         android:layout_width="48dp"
         android:layout_height="49dp"
         android:backgroundTint="#E91E63"
         android:text="/"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/btnPercent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnMultiply"
         android:layout_width="48dp"
         android:layout_height="49dp"
         android:backgroundTint="#E91E63"
         android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/var2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Second Variable"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintEnd_toEndOf="@+id/txtboxVar1"
+        app:layout_constraintStart_toStartOf="@+id/txtboxVar1"
+        app:layout_constraintTop_toBottomOf="@+id/txtboxVar1" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/txtboxVar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -101,48 +101,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/var1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/txtboxVar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var2"
+        app:layout_constraintTop_toBottomOf="@+id/var2"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Answer"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/Result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/Result"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="The result is"
         android:textSize="20dp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/txtOutput"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
